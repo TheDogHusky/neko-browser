@@ -1,0 +1,22 @@
+{
+  "name": "ts-template",
+  "version": "1.0.0",
+  "description": "A very simple template for TypeScript projects",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "npm run build && node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheDogHusky/ts-template.git"
+  },
+  "keywords": [],
+  "author": "TheDogHusky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheDogHusky/ts-template/issues"
+  },
+  "homepage": "https://github.com/TheDogHusky/ts-template#readme"
+}

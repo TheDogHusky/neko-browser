@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loading App..</title>
+    <style>
+        :root {
+            --gray: #adadad;
+            --yellow: #ff9800;
+            --red: #f44336;
+            --green: #7ed957;
+            --blue: #2196f3;
+            --white: #fafafa;
+            --black: #212121;
+
+            --primary: #eb7763;
+            --secondary: var(--gray);
+            --warning: var(--yellow);
+            --success: var(--green);
+            --info: var(--blue);
+            --light: var(--white);
+            --dark: var(--black);
+            --danger: var(--red);
+        }
+
+        body {
+            background-color: #bbbbbb;
+            color: var(--dark);
+            font-family: monospace;
+            font-size: 2em;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .link {
+            color: var(--primary);
+            text-decoration: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 25vh;
+        }
+        .loading-icon {
+            animation: loading 1s infinite;
+        }
+        @keyframes loading {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            min-height: 4rem;
+            height: fit-content;
+            background-color: var(--dark);
+            color: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .footer-text {
+            font-size: 0.5em;
+        }
+        .versions {
+            font-size: 0.4em;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* make a little separation line between the versions and the footer text */
+        .versions::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: var(--light);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="loading-title">Loading <span style="color: var(--primary);">Neko</span><span style="color: var(--gray);">-</span><span style="color: var(--yellow);">Browser</span>..</h1>
+        <img class="loading-icon" width="50" height="50" src="assets/loading.svg" alt="Loading_Icon"></img>
+    </div>
+    <footer>
+        <div class="container">
+            <p class="footer-text">Made with <span style="color: var(--red);">❤</span> by <a href="https://classy.works" target="_blank" class="link">Adam Billard</a> | Version <span style="color: var(--yellow);" id="package-version"></span></p>
+            <p class="versions">Electron: <span id="electron-version"></span>, Chrome: <span id="chrome-version"></span>, NodeJS: <span id="node-version"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

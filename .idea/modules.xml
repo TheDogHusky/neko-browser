@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ts-template.iml" filepath="$PROJECT_DIR$/.idea/ts-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/neko-browser.iml" filepath="$PROJECT_DIR$/.idea/neko-browser.iml" />
     </modules>
   </component>
 </project>

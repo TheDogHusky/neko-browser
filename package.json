@@ -1,22 +1,27 @@
 {
-  "name": "ts-template",
-  "version": "1.0.0",
-  "description": "A very simple template for TypeScript projects",
+  "name": "neko-browser",
+  "version": "0.0.1",
+  "description": "A simple NodeJS Electron browser",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc",
-    "start": "npm run build && node lib/index.js"
+    "start": "electron src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheDogHusky/ts-template.git"
+    "url": "git+https://github.com/TheDogHusky/neko-browser.git"
   },
   "keywords": [],
   "author": "TheDogHusky",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TheDogHusky/ts-template/issues"
+    "url": "https://github.com/TheDogHusky/neko-browser/issues"
   },
-  "homepage": "https://github.com/TheDogHusky/ts-template#readme"
+  "homepage": "https://github.com/TheDogHusky/neko-browser#readme",
+  "dependencies": {
+    "electron": "^24.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }

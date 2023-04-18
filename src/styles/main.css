@@ -24,6 +24,7 @@ body {
     color: var(--black);
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif
 }
 
 .tab-container {
@@ -36,7 +37,7 @@ body {
     display: flex;
     flex-flow: nowrap row;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     background-color: var(--gray);
 
 }
@@ -45,7 +46,7 @@ body {
     flex-flow: row nowrap;
     color: var(--white);
     height: fit-content;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     padding: 7px 15px;
     padding-right: 5px;
@@ -53,11 +54,17 @@ body {
     border-radius: 5px;
     cursor: grab;
     user-select: none;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
 }
 
 .tab h4 {
     margin: 0;
     font-weight: lighter;
+}
+
+.selected {
+    background-color: var(--primary);
 }
 
 .tab button {
@@ -111,4 +118,113 @@ body {
 
 #app {
     margin: 42px 0px;
+}
+
+.btn {
+    --btn-color: #333;
+    --btn-bg-color: #fff;
+    --btn-hover-color: #fff;
+    --btn-hover-bg-color: #333;
+
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--btn-bg-color);
+    border-radius: 5px;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--btn-hover-color);
+    border-color: var(--btn-hover-bg-color);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-primary {
+    --btn-color: var(--black);
+    --btn-bg-color: var(--primary);
+    --btn-hover-color: var(--black);
+    --btn-hover-bg-color: var(--primary);
+}
+
+.btn-secondary {
+    --btn-color: var(--black);
+    --btn-bg-color: var(--secondary);
+    --btn-hover-color: var(--black);
+    --btn-hover-bg-color: var(--secondary);
+}
+
+.btn-warning {
+    --btn-color: var(--black);
+    --btn-bg-color: var(--warning);
+    --btn-hover-color: var(--black);
+    --btn-hover-bg-color: var(--warning);
+}
+
+.btn-success {
+    --btn-color: var(--black);
+    --btn-bg-color: var(--success);
+    --btn-hover-color: var(--black);
+    --btn-hover-bg-color: var(--success);
+}
+
+.btn-info {
+    --btn-color: var(--black);
+    --btn-bg-color: var(--info);
+    --btn-hover-color: var(--black);
+    --btn-hover-bg-color: var(--info);
+}
+
+.btn-light {
+    --btn-color: var(--black);
+    --btn-bg-color: var(--light);
+    --btn-hover-color: var(--black);
+    --btn-hover-bg-color: var(--light);
+}
+
+.btn-dark {
+    --btn-color: var(--white);
+    --btn-bg-color: var(--dark);
+    --btn-hover-color: var(--white);
+    --btn-hover-bg-color: var(--dark);
+}
+
+.btn-danger {
+    --btn-color: var(--black);
+    --btn-bg-color: var(--danger);
+    --btn-hover-color: var(--black);
+    --btn-hover-bg-color: var(--danger);
+}
+
+.btn-white {
+    --btn-color: var(--white);
+    --btn-hover-color: var(--white);
+}
+
+.btn-toolbar {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    font-size: 1.5rem;
+    box-shadow: none;
+}
+
+.btn-toolbar * {
+    font-weight: 800;
+}
+
+.btn-toolbar:hover {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: var(--primary);
 }

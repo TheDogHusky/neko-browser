@@ -22,7 +22,9 @@
               <button class="btn btn-toolbar"><i class="bi bi-house"></i></button>
           </div>
           <div class="tools-center">
-              <div class="urlbar"></div>
+              <div class="urlbar">
+                  <input type="text" class="urlbar-input" placeholder="Search or enter address">
+              </div>
           </div>
           <div class="tools-left">
               <button class="btn btn-toolbar"><i class="bi bi-search"></i></button>

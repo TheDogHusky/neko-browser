@@ -8,6 +8,7 @@
     --blue: #2196f3;
     --white: #fafafa;
     --black: #212121;
+    --lightgray: #e7e7e7;
 
     --primary: #eb7763;
     --secondary: var(--gray);
@@ -227,4 +228,35 @@ body {
     border-color: transparent;
     box-shadow: none;
     color: var(--primary);
+}
+
+.urlbar {
+    width: 90rem;
+    height: 1.75rem;
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--gray);
+    color: var(--white);
+    outline: none;
+}
+
+.urlbar:focus {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.urlbar-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--gray);
+    color: var(--lightgray);
+    outline: none;
 }

@@ -40,23 +40,23 @@ body {
     align-items: center;
     gap: 5px;
     background-color: var(--gray);
-
 }
 .tab {
     display: flex;
     flex-flow: row nowrap;
     color: var(--white);
-    height: fit-content;
+    height: 1.5rem;
     gap: 15px;
     align-items: center;
-    padding: 7px 15px;
-    padding-right: 5px;
+    padding: 7px 7px 7px 15px;
     background-color: var(--black);
     border-radius: 5px;
     cursor: grab;
     user-select: none;
+    justify-content: flex-start;
     letter-spacing: 1px;
     font-size: 0.8rem;
+    width: 8vw;
 }
 
 .tab h4 {
@@ -68,10 +68,20 @@ body {
     background-color: var(--primary);
 }
 
+.tabid {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin: 0;
+}
+
 .tab button {
     border: none;
     background-color: transparent;
     color: var(--white);
+    padding: 0;
+    margin: 0;
 }
 
 .tools {
@@ -118,7 +128,7 @@ body {
 }
 
 #app {
-    margin: 42px 0px;
+    margin: 3rem 0px;
 }
 
 .btn {
@@ -257,6 +267,8 @@ body {
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--gray);
-    color: var(--lightgray);
+    color: var(--black);
     outline: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

@@ -6,6 +6,12 @@
           </div>
           <button class="tabcloser"><i class="bi bi-x-lg"></i></button>
       </div>
+      <div class="tab">
+          <div class="tabid">
+              <h4 class="tabname">Tabname overflowing from the tab text</h4>
+          </div>
+          <button class="tabcloser"><i class="bi bi-x-lg"></i></button>
+      </div>
       <div class="tab selected">
           <div class="tabid">
               <h4 class="tabname">Tabname Selected</h4>
